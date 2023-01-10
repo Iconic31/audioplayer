@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Audio Player</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./style.css" type="text/css" />
+    </head>
+
+    <body>
+        
+
+        <div class="container">
+
+            <h1>Audio Player</h1>
+
+            <audio src="./src/sample1.mp3" id="audioScreen" class="audioScreen"></audio>
+
+            <div class="controls">
+
+                <button type="button" id="prev" class="btns">
+                    <i class="fas fa-backward"></i>
+                </button>
+
+                <button type="button" id="play" class="btns">
+                    <i class="fas fa-play"></i>
+                </button>
+
+                <button type="button" id="next" class="btns">
+                    <i class="fas fa-forward"></i>
+                </button>
+
+                <button type="button" id="stop" class="btns">
+                    <i class="fas fa-stop"></i>
+                </button>
+
+                <div id="progress-container" class="progress-container">
+                    <div id="progress" class="progress"></div>
+                </div>
+
+                <input type="range" id="volumeControl" class="volumeControl" min="0" max="100" value="70" />
+
+                <div id="displayTime" class="displayTime">00:00</div>
+
+            </div>
+
+        </div>
+
+        <script src="./app.js" type="text/javascript"></script>
+
+    </body>
+
+</html>
